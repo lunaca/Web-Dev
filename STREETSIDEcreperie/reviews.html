@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	
+	<style> 
+	
+	.logoimage{
+		 width: 340px;
+		
+		margin-top: auto;
+		overflow:hidden;
+		margin-left: 30px;
+		border: 3px solid;
+		
+	}
+	
+	body{
+	background-image: url("streetside.jpg");
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	
+	
+	}
+	.flexcontainer
+	{display:flex;
+	 width:100%;
+	height:100%;
+	
+	align-items: center;
+	padding-top:50px;
+	}
+	.allflexcontainer{
+	display:flex;
+	 width:100%;
+	height:100%;
+
+	margin-left: 30px;
+	}
+	.contentflexcontainer
+	{display:flex;
+	 width:100%;
+	height:100%;
+	
+	
+	font-family: "Lantinghei SC";
+	flex-direction: column;
+	}
+	/* Add a black background color to the top navigation */
+	.topnav { display: flex;
+		background-color: #333;
+		overflow: hidden;
+		opacity: 0.9;
+		height:60px;
+		width: 100%;
+		flex-wrap: wrap;
+	
+	}
+
+	/* Style the links inside the navigation bar */
+	.topnav a {
+		
+		float: left;
+		color: #f2f2f2;
+		font-family: "DIN Condensed";
+		padding: 20px 30px;
+		text-decoration: none;
+		font-size: 25px;
+		flex-wrap: wrap;
+		
+		
+	}
+
+	/* Change the color of links on hover */
+	.topnav a:hover {
+		background-color: #ddd;
+		color: black;
+	}
+
+	/* Add a color to the active/current link */
+	.topnav a.active {
+		background-color: #4CAF50;
+		color: white;
+	}
+	
+	.details{
+	background: white;
+	margin-left: 30px;
+	margin-right: 40px;
+	width: 250px;
+	height: 800px;	
+	opacity: 0.8;
+	border: 2px solid;
+	text-align: center;
+	font-family: "Avenir Next";
+	
+	
+	}
+/*	.content{*/
+/*	background: rgba(0, 0, 0, 0.8);*/
+/*	max-width: 1000px;*/
+/*	display:flex;*/
+/*	margin-left: 100px;*/
+/*	display: -ms-flex;*/
+/*	display: -webkit-flex;*/
+/*	margin-right: 50px;*/
+/*	}*/
+	.content{ 
+		background: black;
+		width: 600px;
+		height: 600px;
+		margin-left: 40px;
+		margin-top: 20px;
+		background: rgba(0, 0, 0, 0.8);
+		color: white;
+		
+		}
+
+	
+	h1 { font-weight:normal; 
+	
+	}
+	#yelpwidget{
+	margin-top: 40px;
+	}
+	.ourmenu
+		{display: inherit;
+		width: 300px;
+		height: 100px;
+		font-size: 30px;
+		background: white;
+		border: 2px solid;
+		text-align: center;
+		align-items: center;
+		justify-content: center;
+		align-self: center;
+		
+		}
+	</style>
+	
+	</head>
+	<script>(function() { var s = document.createElement("script");s.async = true;s.onload = s.onreadystatechange = function(){getYelpWidget("streetside-creperie-conway?osq=crepes","600","BLK","y","y","10");};s.src='http://chrisawren.com/widgets/yelp/yelpv2.js' ;var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);})();</script>
+		
+	<body>
+	
+	<div class = "flexcontainer" >
+	<div class="logoimage"><img src = "streetsidelogo.jpg" style='height: 100%; width: 100%; object-fit: contain'/>
+	</div>
+	<div class="topnav" id="myTopnav" >
+		<a href="#home"><u>HOME</u></a>
+		<a href="#about">ABOUT</a>
+		<a href="#ourteam">OUR TEAM</a>
+		<a href="#menu">MENU</a>
+		<a href="#reviews">REVIEWS</a>
+	</div>
+	</div>
+	<div class = "allflexcontainer">
+		<div class= "details"> </br></br></br>
+		<hr width= 70%>1321 Oak Street </br>
+		Conway, Arkansas<hr width= 70%></br>
+		<a href = "https://maps.google.com?saddr=Current+Location&daddr=Streetside+Creperie">Directions to Us!</a>
+		</div>
+	
+	<div class = "contentflexcontainer">
+	<div class = "ourmenu">OUR REVIEWS</div>
+	<div class= "content">
+	
+	<div id=  "yelpwidget">
+	</div>
+	
+
+		
+		</div>
+	</div>
+			
+</html>
+		
