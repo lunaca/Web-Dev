@@ -1,0 +1,296 @@
+<!AIzaSyA0EBlDnSu-MeozNz5G6mXfkhvGavW2Xwg!>
+<!Oauth : 23296358881-12lui99s46vjnta8kib775p4bvfdhc7l.apps.googleusercontent.com>
+<!salontest111@gmail.com!>
+<!675345801033-iqbe86j2h6e3qhveo24jcj7o5g72bbsm.apps.googleusercontent.com
+>
+<html>
+    <head>
+
+        <link rel='stylesheet' href='fullcalendar/fullcalendar.css'/>
+        <link rel = "stylesheet" href = 'custom/jquery-ui.css'/>
+        <script src='fullcalendar/lib/jquery.min.js'"></script>
+        <script src='fullcalendar/lib/moment.min.js'></script>
+        <script src='fullcalendar/fullcalendar.js'></script>
+        <script type='text/javascript' src='fullcalendar/gcal.js'></script>
+        <script type='text/javascript'>
+
+            $(document).ready(function() {
+                $('#calendar').fullCalendar({
+                  allDaySlot: false,
+                  minTime: "10:00:00",
+                  maxTime: "19:00:00",
+                  defaultView: 'agendaWeek',
+
+
+
+                    googleCalendarApiKey: 'AIzaSyA0EBlDnSu-MeozNz5G6mXfkhvGavW2Xwg',
+                    events: {
+                        googleCalendarId: 'salontest111@gmail.com'
+
+                    }
+
+                });
+                var slatHeight = $("#calendar").find('.fc-slats').height();
+                var height = $('#calendar').find('.fc-time-grid-container').height();
+                if(slatHeight < height)
+                {
+                    $('#calendar').find('.fc-time-grid-container').css('max-height',slatHeight+'px');
+                }
+
+                $('#calendar1').fullCalendar({
+                  allDaySlot: false,
+                  minTime: "10:00:00",
+                  maxTime: "19:00:00",
+                  defaultView: 'agendaWeek',
+
+
+
+                    googleCalendarApiKey: 'AIzaSyDAyf_KdWw3ihKC7QA6Wwp5DbACOn2EV6g',
+                    events: {
+                        googleCalendarId: 'salontest221@gmail.com'
+
+                    }
+
+                });
+                var slatHeight = $("#calendar1").find('.fc-slats').height();
+                var height = $('#calendar1').find('.fc-time-grid-container').height();
+                if(slatHeight < height)
+                {
+                    $('#calendar').find('.fc-time-grid-container').css('max-height',slatHeight+'px');
+                }
+                 $('#calendar').hide();
+                  $('#calendar1').hide();
+                $('#target').on('change', function() {
+       if ( this.value == 'calendar')
+       {
+         $("#calendar").show();
+         $('#calendar1').hide();
+       }
+       if(this.value == 'calendar1')
+       {
+         $("#calendar1").show();
+         $("#calendar").hide();
+       }
+     });
+            });
+
+
+        </script>
+
+
+<style>
+body {color: white;
+  font-family: "Century Gothic";
+  background-color: black;
+
+}
+
+ul {font-weight: normal;
+  text-align: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #111;
+
+}
+
+li {
+display: inline-block;
+
+}
+
+li a {
+  font-family: "Century Gothic";
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+.flexcontainer {
+  width: auto;
+  display: flex;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+
+}
+
+li a:hover {
+  color:pink;
+}
+scheduleheader{
+  align-self: center;
+
+
+}
+.addform{
+  background-color: black;
+  text-align: center;
+  margin-top: 15px;
+  color: white;
+  border: 1px white dotted;
+
+
+}
+
+
+</style>
+    </head>
+
+    <body>
+    <div = id "w3-container">
+    <div id="header" style="oveflow: hidden;  ">
+    <img src="header.png" style="max-width: 100%" />
+    </div>
+    </div>
+    <ul>
+    <li><a href="default.asp">about</a></li>
+    <li><a href="news.asp">salon</a></li>
+    <li><a href="contact.asp">stylists</a></li>
+    <li><a href="about.asp">services</a></li>
+      <li><a href="about.asp">contact</a></li>
+    </ul>
+    </div>
+      <div class = "flexcontainer">
+    <div id = "scheduleheader"><img src = "scheduleheader.png" style = "width: 300";>
+    </div>
+    </div>
+    <div class = "flexcontainer">
+    <div id='calendar' class = "inv"></div>
+    <div id = 'calendar1' class = "inv"></div>
+    </div>
+    <div class = "flexcontainer">
+    <form action="process.php" method="post" style = "height: auto; width: 500px; "enctype="multipart/form-data">
+
+
+  <h1>  making an appointment is as easy as 1,23!</h1></br>
+
+    <span style="font-size: 30px !important; ">first, </span>select a hairdresser (their schedule will load above)</br>
+    <select id="target" required>
+      <option value="">Select...</option>
+            <option value="calendar">Kris Anthony</option>
+            <option value="calendar1">Tonya McDaniel</option>
+
+        <select>
+        </br></br>
+    <span style="font-size: 30px !important; "> second,</span> find a time they are available and select a service.</br>
+    <select name="month" required>
+      <option value="">Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+<select>
+
+        <select name = "date" required>
+        <option value="">Day</option>
+        <option> - Day - </option>
+<option value="01">1</option>
+<option value="02">2</option>
+<option value="03">3</option>
+<option value="04">4</option>
+<option value="05">5</option>
+<option value="06">6</option>
+<option value="07">7</option>
+<option value="08">8</option>
+<option value="09">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+	<option value="29">29</option>
+	<option value="30">30</option>
+	<option value="31">31</option>
+
+          <select>
+          <select name = "time" required>
+          <option value="">Start Time</option>
+          <option value="10:00">10:00 a.m. </option>
+          <option value="10:15">10:15 a.m. </option>
+          <option value="10:30">10:30 a.m. </option>
+          <option value="10:45">10:45 a.m. </option>
+          <option value="11:00 ">11:00 a.m.</option>
+          <option value="11:15">11:15 a.m. </option>
+          <option value="11:30">11:30 a.m. </option>
+          <option value="11:45">11:45 a.m. </option>
+          <option value="12:00 ">12:00 p.m.</option>
+          <option value="12:15">12:15 p.m. </option>
+          <option value="12:30">12:30 p.m. </option>
+          <option value="12:45">12:45 p.m. </option>
+          <option value="13:00">1:00 p.m.</option>
+          <option value="13:15">1:15 p.m. </option>
+          <option value="13:30">1:30 p.m. </option>
+          <option value="13:45">1:45 p.m. </option>
+          <option value="14:00 ">2:00 p.m.</option>
+          <option value="14:15">2:15 p.m. </option>
+          <option value="14:30">2:30 p.m. </option>
+          <option value="14:45">2:45 p.m. </option>
+          <option value="15:00 ">3:00 p.m.</option>
+          <option value="15:15">3:15 p.m. </option>
+          <option value="15:30">3:30 p.m. </option>
+          <option value="15:45">3:45 p.m. </option>
+          	<option value="16:00  ">4:00 p.m.</option>
+            <option value="16:15">4:15 p.m. </option>
+            <option value="16:30">4:30 p.m. </option>
+            <option value="16:45">4:45 p.m. </option>
+          	<option value="17:00 ">5:00 p.m.</option>
+            <option value="17:15">5:15 p.m. </option>
+            <option value="17:30">5:30 p.m. </option>
+            <option value="17:45">5:45 p.m. </option>
+          	<option value="18:00  ">6:00 p.m.</option>
+
+<select></br>
+
+<select name = "service" required >
+<option>Service</option>
+<option value = "2   Thick Hair Cut">Hair Cut (Thick Hair) (2 hours)  $145  </option>
+<option value = ".5    Brazilian Wax"> Brazilian Wax (30 min) $100</option>
+
+<select>
+
+
+        <br>
+
+    <span style="font-size: 30px !important; "> third, </span> leave your contact info so we can let you know when we approve the appointment!
+</br></br>
+  Name: <div style="text-align:center;"><input type="text" name="name" required></div>
+  Phone Number: <div style="text-align:center;"><input type="text" name="number"required ></div>
+  Email Address: <div style="text-align:center;"><input type="text" name="email" required></div>
+  Comments:<div style="text-align:center;"><textarea rows="4" cols="50" name='comments' required ></textarea></div>
+
+		<input type="submit" name="submit" value="Make Appointment">
+    </form>
+    </div>
+    </div>
+
+
+        </div>
+
+    </body>
+</html>

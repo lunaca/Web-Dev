@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title></title>
+  <style>
+  body {color: white;
+    font-family: "Century Gothic";
+    background-color: black;
+      margin: 0;
+
+  }
+  ul {font-weight: normal;
+    text-align: center;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #111;
+
+  }
+
+  li {
+  display: inline-block;
+
+  }
+
+  li a {
+    font-family: "Century Gothic";
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+
+  }
+  li a:hover {
+    color:pink;
+  }
+  banner{
+  border : 2px solid;
+  border-color: white;
+  }
+bottom {
+  display: flex;
+
+}
+bottominfo{
+  color: white;
+
+  text-align: center;
+}
+  /* Change the link color to #111 (black) on hover */
+
+
+.wrapper{
+  margin-top: 15px;
+  height: 100px;
+
+  display: flex;
+  flex-direction: column;
+}
+ .footer{
+
+  height: 20px;
+
+  color: #fff;
+}
+.footcontent {
+  display: flex;
+  flex: 1;
+
+  color: white;
+}
+.columns{
+  text-align: center;
+  display: flex;
+  flex:1;
+    min-width: 70px;
+}
+.main{
+  flex: 1;
+  order: 2;
+
+}
+.main a:hover
+{
+  color:pink;
+}
+.sidebar-first{
+  width: 20%;
+
+  order: 1;
+}
+.sidebar-second{
+  width: 20%;
+  order: 3;
+
+}
+
+  </style>
+</head>
+<body>
+  <div = id "w3-container">
+  <div id="header" style="oveflow: hidden;  ">
+  <img src="header.png" style="max-width: 100%" />
+</div>
+</div>
+  <ul>
+  <li><a href="default.asp">about</a></li>
+  <li><a href="news.asp">salon</a></li>
+  <li><a href="contact.asp">stylists</a></li>
+  <li><a href="about.asp">services</a></li>
+    <li><a href="about.asp">contact</a></li>
+</ul>
+
+  <div class = "banner"><img src = "banner1.png" style=' width: 100%; object-fit: contain'/>
+
+</div>
+<div class="wrapper">
+  <section class="footcontent">
+   <div class="columns">
+     <main class="main">services<p style = "font-size: 8pt;"> hair </br></br> waxing
+    </br> </br>makeup<p></main>
+     <aside class="sidebar-first">hours<p style = "font-size: 8pt;">monday-saturday:
+ </br>10:00 am - 6: 00 pm</br></br>closed sunday</p></aside>
+     <aside class="sidebar-second">salon<p style = "font-size: 8pt;">2104 harkrider street<br>suite 102<br><br>conway,ar<br>72034</aside>
+   </div>
+ </section>
+
+</div>
+</div>
+</div>
+</body>
+</html>
